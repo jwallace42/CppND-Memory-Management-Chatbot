@@ -85,8 +85,6 @@ ChatBot& ChatBot::operator=(ChatBot &&source )
 
     if( this == &source)
         return *this;
-    
-    delete _image;
 
     _image = source._image; 
     _chatLogic = source._chatLogic;
